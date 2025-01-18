@@ -4,8 +4,9 @@
     
 }
 #icon{
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 10px 0;
 }
 *{
     margin: 0;
@@ -25,3 +26,114 @@
 #upperLine p {
     line-height: 40px;
 }
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+a{
+    text-decoration: none;
+    transition: 1s;
+    line-height: 40px;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #222;
+}
+a:hover,button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+}
+#search{
+    background-image: url(search.svg);
+}
+#user{
+    background-image: url(user.svg);
+}
+#favorites{
+    background-image: url(heart.svg);
+}
+#basket{
+    background-image: url(shopping-bag.svg);
+}
+nav button{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    transition: 1s;
+}
+#buyNow{
+    width: auto;
+    background-color:#89D3D1 ;
+    border-radius: 40px;
+    padding: 0 20px;
+    color: white;
+    margin-left: 30px;
+}
+header a img{
+    vertical-align: middle;
+}
+header ul{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+    list-style-position: inside;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    
+}
+header ul li{
+    padding: 0 15px;
+    display: flex;
+}
+.ulShow{
+    opacity: 1;
+    pointer-events: auto;
+}
+#discount{
+    background-color: white;
+    border:  2px solid #BAA370 ;
+    max-width: 800px;
+    margin: auto;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+#sale{
+    padding: 0 40px;
+    flex: 1;
+    line-height: 40px;
+    text-align: center;
+}
+#offer{
+    background-color: #BF8B70;
+    border-radius: 0 0 100px 100px;
+    padding:0 40px;
+    flex: 1;
+    line-height:40px ;
+    text-align: center;
+    color: white;
+}
+#hero img{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: block;
+}
+#hero{
+    position: relative;
+}
+/* nav прячется за hero */
